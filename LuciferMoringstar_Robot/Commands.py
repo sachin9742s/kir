@@ -25,7 +25,7 @@ async def start(client, message):
         await db.add_user(chat_id)
         await bot.send_message(
             LOG_CHANNEL,
-            f"#NEWUSER: \n\nNew User [{message.from_user.first_name}], script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention}) started @{BOT_USERNAME} !!",
+            f"#NEWUSER: \n\nNew User [{message.from_user.first_name}], script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention) started @{BOT_USERNAME} !!",
         )
     usr_cmdall1 = message.text
     if usr_cmdall1.startswith("/start pr0fess0r_99"):
