@@ -1,7 +1,7 @@
 import re
 import os
 from os import environ
-class script(object):
+
 id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
