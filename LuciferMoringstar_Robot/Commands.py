@@ -118,7 +118,7 @@ async def start(client, message):
         )
     else:
         await message.reply_photo(
-            photo=random.choice(PICS),
+            photo=.choice(PICS),
             caption=script.START_TXT.format(message.from_user.mention),
             parse_mode="Markdown",
             disable_web_page_preview=True,
