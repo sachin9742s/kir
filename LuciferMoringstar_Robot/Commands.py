@@ -21,7 +21,6 @@ db = Database(DB_URL, SESSION)
 async def start(client, message):
     chat_id = message.from_user.id
     if not await db.is_user_exist(chat_id):
-        data = await bot.get_me()
         BOT_USERNAME = data.username
         await db.add_user(chat_id)
         await bot.send_message(
